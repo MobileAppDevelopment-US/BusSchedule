@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD23B64FD9C53DBF09B8CC4 /* libPods-BusSchedule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 361365A6CE2002C3A7519D8A /* libPods-BusSchedule.a */; };
+		72B5185D1E770DC500F59218 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B5185C1E770DC500F59218 /* main.m */; };
+		72B518601E770DC500F59218 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B5185F1E770DC500F59218 /* AppDelegate.m */; };
+		72B518661E770DC500F59218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B518641E770DC500F59218 /* Main.storyboard */; };
+		72B518681E770DC500F59218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B518671E770DC500F59218 /* Assets.xcassets */; };
+		72B5186B1E770DC500F59218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B518691E770DC500F59218 /* LaunchScreen.storyboard */; };
+		72B518761E770DC500F59218 /* BusScheduleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B518751E770DC500F59218 /* BusScheduleTests.m */; };
+		72B518811E770DC500F59218 /* BusScheduleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B518801E770DC500F59218 /* BusScheduleUITests.m */; };
+		72B518931E770FA500F59218 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B518921E770FA500F59218 /* ScheduleViewController.m */; };
+		72B518961E7711DC00F59218 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B518951E7711DC00F59218 /* InfoViewController.m */; };
+		72B518991E77FE3B00F59218 /* CellFive.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B518981E77FE3B00F59218 /* CellFive.m */; };
+		72B5189C1E78687800F59218 /* ViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B5189B1E78687800F59218 /* ViewHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72B518721E770DC500F59218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B518501E770DC500F59218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72B518571E770DC500F59218;
+			remoteInfo = BusSchedule;
+		};
+		72B5187D1E770DC500F59218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B518501E770DC500F59218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72B518571E770DC500F59218;
+			remoteInfo = BusSchedule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		361365A6CE2002C3A7519D8A /* libPods-BusSchedule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BusSchedule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DADE243E2DDED479FABF6E /* Pods-BusSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusSchedule/Pods-BusSchedule.release.xcconfig"; sourceTree = "<group>"; };
+		67A19DDBC5E3A4E78D0FD949 /* Pods-BusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusSchedule/Pods-BusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
+		72B518581E770DC500F59218 /* BusSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B5185C1E770DC500F59218 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72B5185E1E770DC500F59218 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		72B5185F1E770DC500F59218 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		72B518651E770DC500F59218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72B518671E770DC500F59218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72B5186A1E770DC500F59218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72B5186C1E770DC500F59218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B518711E770DC500F59218 /* BusScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B518751E770DC500F59218 /* BusScheduleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusScheduleTests.m; sourceTree = "<group>"; };
+		72B518771E770DC500F59218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B5187C1E770DC500F59218 /* BusScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B518801E770DC500F59218 /* BusScheduleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusScheduleUITests.m; sourceTree = "<group>"; };
+		72B518821E770DC500F59218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B518911E770FA500F59218 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		72B518921E770FA500F59218 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		72B518941E7711DC00F59218 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		72B518951E7711DC00F59218 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		72B518971E77FE3B00F59218 /* CellFive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFive.h; sourceTree = "<group>"; };
+		72B518981E77FE3B00F59218 /* CellFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFive.m; sourceTree = "<group>"; };
+		72B5189A1E78687800F59218 /* ViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHeader.h; sourceTree = "<group>"; };
+		72B5189B1E78687800F59218 /* ViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHeader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72B518551E770DC500F59218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD23B64FD9C53DBF09B8CC4 /* libPods-BusSchedule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B5186E1E770DC500F59218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B518791E770DC500F59218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B91D7CAE761D73F6AD2FA4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67A19DDBC5E3A4E78D0FD949 /* Pods-BusSchedule.debug.xcconfig */,
+				40DADE243E2DDED479FABF6E /* Pods-BusSchedule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72B5184F1E770DC500F59218 = {
+			isa = PBXGroup;
+			children = (
+				72B5185A1E770DC500F59218 /* BusSchedule */,
+				72B518741E770DC500F59218 /* BusScheduleTests */,
+				72B5187F1E770DC500F59218 /* BusScheduleUITests */,
+				72B518591E770DC500F59218 /* Products */,
+				0B91D7CAE761D73F6AD2FA4F /* Pods */,
+				F6237F4860BBBEB558017FF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72B518591E770DC500F59218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72B518581E770DC500F59218 /* BusSchedule.app */,
+				72B518711E770DC500F59218 /* BusScheduleTests.xctest */,
+				72B5187C1E770DC500F59218 /* BusScheduleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72B5185A1E770DC500F59218 /* BusSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				72B518971E77FE3B00F59218 /* CellFive.h */,
+				72B518981E77FE3B00F59218 /* CellFive.m */,
+				72B5189A1E78687800F59218 /* ViewHeader.h */,
+				72B5189B1E78687800F59218 /* ViewHeader.m */,
+				72B5185E1E770DC500F59218 /* AppDelegate.h */,
+				72B5185F1E770DC500F59218 /* AppDelegate.m */,
+				72B518941E7711DC00F59218 /* InfoViewController.h */,
+				72B518951E7711DC00F59218 /* InfoViewController.m */,
+				72B518911E770FA500F59218 /* ScheduleViewController.h */,
+				72B518921E770FA500F59218 /* ScheduleViewController.m */,
+				72B518641E770DC500F59218 /* Main.storyboard */,
+				72B518671E770DC500F59218 /* Assets.xcassets */,
+				72B518691E770DC500F59218 /* LaunchScreen.storyboard */,
+				72B5186C1E770DC500F59218 /* Info.plist */,
+				72B5185B1E770DC500F59218 /* Supporting Files */,
+			);
+			path = BusSchedule;
+			sourceTree = "<group>";
+		};
+		72B5185B1E770DC500F59218 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72B5185C1E770DC500F59218 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72B518741E770DC500F59218 /* BusScheduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				72B518751E770DC500F59218 /* BusScheduleTests.m */,
+				72B518771E770DC500F59218 /* Info.plist */,
+			);
+			path = BusScheduleTests;
+			sourceTree = "<group>";
+		};
+		72B5187F1E770DC500F59218 /* BusScheduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72B518801E770DC500F59218 /* BusScheduleUITests.m */,
+				72B518821E770DC500F59218 /* Info.plist */,
+			);
+			path = BusScheduleUITests;
+			sourceTree = "<group>";
+		};
+		F6237F4860BBBEB558017FF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				361365A6CE2002C3A7519D8A /* libPods-BusSchedule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72B518571E770DC500F59218 /* BusSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B518851E770DC500F59218 /* Build configuration list for PBXNativeTarget "BusSchedule" */;
+			buildPhases = (
+				AFCF782DCFE208E7F1A34FC0 /* [CP] Check Pods Manifest.lock */,
+				72B518541E770DC500F59218 /* Sources */,
+				72B518551E770DC500F59218 /* Frameworks */,
+				72B518561E770DC500F59218 /* Resources */,
+				95A0DB8264A9D96F5C8D9336 /* [CP] Embed Pods Frameworks */,
+				C28FCFE8DF450FC748926967 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusSchedule;
+			productName = BusSchedule;
+			productReference = 72B518581E770DC500F59218 /* BusSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72B518701E770DC500F59218 /* BusScheduleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B518881E770DC500F59218 /* Build configuration list for PBXNativeTarget "BusScheduleTests" */;
+			buildPhases = (
+				72B5186D1E770DC500F59218 /* Sources */,
+				72B5186E1E770DC500F59218 /* Frameworks */,
+				72B5186F1E770DC500F59218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72B518731E770DC500F59218 /* PBXTargetDependency */,
+			);
+			name = BusScheduleTests;
+			productName = BusScheduleTests;
+			productReference = 72B518711E770DC500F59218 /* BusScheduleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72B5187B1E770DC500F59218 /* BusScheduleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B5188B1E770DC500F59218 /* Build configuration list for PBXNativeTarget "BusScheduleUITests" */;
+			buildPhases = (
+				72B518781E770DC500F59218 /* Sources */,
+				72B518791E770DC500F59218 /* Frameworks */,
+				72B5187A1E770DC500F59218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72B5187E1E770DC500F59218 /* PBXTargetDependency */,
+			);
+			name = BusScheduleUITests;
+			productName = BusScheduleUITests;
+			productReference = 72B5187C1E770DC500F59218 /* BusScheduleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72B518501E770DC500F59218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Serik Klement";
+				TargetAttributes = {
+					72B518571E770DC500F59218 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3TX466DVBY;
+						ProvisioningStyle = Automatic;
+					};
+					72B518701E770DC500F59218 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3TX466DVBY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72B518571E770DC500F59218;
+					};
+					72B5187B1E770DC500F59218 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3TX466DVBY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72B518571E770DC500F59218;
+					};
+				};
+			};
+			buildConfigurationList = 72B518531E770DC500F59218 /* Build configuration list for PBXProject "BusSchedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72B5184F1E770DC500F59218;
+			productRefGroup = 72B518591E770DC500F59218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72B518571E770DC500F59218 /* BusSchedule */,
+				72B518701E770DC500F59218 /* BusScheduleTests */,
+				72B5187B1E770DC500F59218 /* BusScheduleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72B518561E770DC500F59218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B5186B1E770DC500F59218 /* LaunchScreen.storyboard in Resources */,
+				72B518681E770DC500F59218 /* Assets.xcassets in Resources */,
+				72B518661E770DC500F59218 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B5186F1E770DC500F59218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B5187A1E770DC500F59218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95A0DB8264A9D96F5C8D9336 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusSchedule/Pods-BusSchedule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCF782DCFE208E7F1A34FC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C28FCFE8DF450FC748926967 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusSchedule/Pods-BusSchedule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72B518541E770DC500F59218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B518601E770DC500F59218 /* AppDelegate.m in Sources */,
+				72B518931E770FA500F59218 /* ScheduleViewController.m in Sources */,
+				72B518991E77FE3B00F59218 /* CellFive.m in Sources */,
+				72B5189C1E78687800F59218 /* ViewHeader.m in Sources */,
+				72B518961E7711DC00F59218 /* InfoViewController.m in Sources */,
+				72B5185D1E770DC500F59218 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B5186D1E770DC500F59218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B518761E770DC500F59218 /* BusScheduleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B518781E770DC500F59218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B518811E770DC500F59218 /* BusScheduleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72B518731E770DC500F59218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72B518571E770DC500F59218 /* BusSchedule */;
+			targetProxy = 72B518721E770DC500F59218 /* PBXContainerItemProxy */;
+		};
+		72B5187E1E770DC500F59218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72B518571E770DC500F59218 /* BusSchedule */;
+			targetProxy = 72B5187D1E770DC500F59218 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72B518641E770DC500F59218 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B518651E770DC500F59218 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72B518691E770DC500F59218 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B5186A1E770DC500F59218 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72B518831E770DC500F59218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		72B518841E770DC500F59218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72B518861E770DC500F59218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A19DDBC5E3A4E78D0FD949 /* Pods-BusSchedule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TX466DVBY;
+				INFOPLIST_FILE = BusSchedule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerikKlement.BusSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		72B518871E770DC500F59218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DADE243E2DDED479FABF6E /* Pods-BusSchedule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TX466DVBY;
+				INFOPLIST_FILE = BusSchedule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerikKlement.BusSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		72B518891E770DC500F59218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TX466DVBY;
+				INFOPLIST_FILE = BusScheduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerikKlement.BusScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusSchedule.app/BusSchedule";
+			};
+			name = Debug;
+		};
+		72B5188A1E770DC500F59218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TX466DVBY;
+				INFOPLIST_FILE = BusScheduleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerikKlement.BusScheduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusSchedule.app/BusSchedule";
+			};
+			name = Release;
+		};
+		72B5188C1E770DC500F59218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3TX466DVBY;
+				INFOPLIST_FILE = BusScheduleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerikKlement.BusScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BusSchedule;
+			};
+			name = Debug;
+		};
+		72B5188D1E770DC500F59218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3TX466DVBY;
+				INFOPLIST_FILE = BusScheduleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerikKlement.BusScheduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BusSchedule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72B518531E770DC500F59218 /* Build configuration list for PBXProject "BusSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B518831E770DC500F59218 /* Debug */,
+				72B518841E770DC500F59218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B518851E770DC500F59218 /* Build configuration list for PBXNativeTarget "BusSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B518861E770DC500F59218 /* Debug */,
+				72B518871E770DC500F59218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B518881E770DC500F59218 /* Build configuration list for PBXNativeTarget "BusScheduleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B518891E770DC500F59218 /* Debug */,
+				72B5188A1E770DC500F59218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B5188B1E770DC500F59218 /* Build configuration list for PBXNativeTarget "BusScheduleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B5188C1E770DC500F59218 /* Debug */,
+				72B5188D1E770DC500F59218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72B518501E770DC500F59218 /* Project object */;
+}
