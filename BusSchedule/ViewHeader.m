@@ -60,7 +60,7 @@
     [self addSubview:label];
     
     return label;
-    
+
 }
 
 - (void) setWidthLabels {

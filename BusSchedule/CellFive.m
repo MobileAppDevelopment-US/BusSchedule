@@ -67,6 +67,7 @@
     [self setWidthLabels];
     
     self.sityLabel.frame = CGRectMake(0, 0, self.widthSityLabel, self.frame.size.height);
+    
     self.dateFromLabel.frame = CGRectMake(self.sityLabel.frame.size.width + self.space, 0, self.widthOtherLabel, self.frame.size.height);
     self.timeFromLabel.frame = CGRectMake(self.dateFromLabel.frame.size.width + self.dateFromLabel.frame.origin.x + self.space, 0, self.widthOtherLabel, self.frame.size.height);
     self.dateToLabel.frame = CGRectMake(self.timeFromLabel.frame.size.width + self.timeFromLabel.frame.origin.x + self.space, 0, self.widthOtherLabel, self.frame.size.height);

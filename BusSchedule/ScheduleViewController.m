@@ -40,7 +40,7 @@
         
     } else { // если в массиве данные есть
         
-        [self datafromLocalDatabase];
+        [self dataFromLocalDatabase];
     }
     self.navigationItem.title = @"Расписание автобусов"; // название контроллера
     
@@ -54,7 +54,7 @@
     
 }
 
-- (void) datafromLocalDatabase {
+- (void) dataFromLocalDatabase {
     
     [self.tableView reloadData];
     
@@ -152,7 +152,7 @@
         
     }
     // получаю дикшинари из массива
-    NSDictionary *dic = [self.arrayDictionaries objectAtIndex:indexPath.row];
+    NSDictionary *dic = [self.arrayDictionaries objectAtIndex:indexPath.row]; // + 1 дикшинари - потом строка
     
     //достаю из дикшинари по ключу
     NSString *stringSities = [dic objectForKey:@"info"];
@@ -200,7 +200,7 @@
     
     CGRect rect = CGRectMake(0, 0, self.view.frame.size.width, 40);
     
-    ViewHeader *viewHeader = [[ViewHeader alloc] initWithFrame:rect];
+    ViewHeader *viewHeader = [[ViewHeader alloc] initWithFrame:rect]; // создать объект cellFive и в нем создать метод который меняет название ячейки и вызвать его 
     
     return viewHeader;
 }
@@ -228,7 +228,7 @@
     
     [userDefault setObject:self.arrayDictionaries forKey:@"arrayDictionaries"];
     
-    [userDefault synchronize]; // момент сохранения
+    [userDefault synchronize]; // момент сохранения === не нужно в свифт
     
 }
 
